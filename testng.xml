@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+<parameter name="MyBrowser" value="Mozila"></parameter>
+  <test thread-count="5" name="Test" parallel="classes">
+    <classes>
+      <class name="MyTestNG.Sept27_DependsOnGroup"/>
+       <class name="MyTestNG.Sept29_DP"/>
+       <class name="MyTestNG.Oct10_CrossBrowser"/>
+           
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
